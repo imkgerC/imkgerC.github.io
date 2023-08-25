@@ -4,8 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erik Imgrund</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        .hero {
+            background-color: #7facb3;
+            background-image: url("bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #avatar {
+            left: 10%;
+            max-width: 80%;
+            max-height: 80%;
+        }
+        .content {
+            margin: auto;
+        }
+        .card {
+            padding-left: 1em;
+            margin-left: 0.4em;
+            border-left: solid 4px #666;
+            box-shadow: none;
+        }
+        .card ~ .card {
+            margin-top: 1em;
+        }
+        .card > .title {
+            font-size: 1em;
+            margin-bottom: 0;
+            color: #377d88;
+        }
+        a {
+            color: #377d88;
+        }
+        .card > .other {
+            font-size: 0.9em;
+            margin-bottom: 0;
+        }
+        .content {
+            max-width: 768px;
+        }
+        .content ul {
+            margin-top: 0;
+        }
+
+        .content h3 {
+            color: #00b8d4;
+        }
+    </style>
 </head>
 <body>
+    <section class="is-fullheight hero">
+        <div class="hero-head"></div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1">Hi, I'm Erik</h1>
+                <div class="subtitle is-3">I'm a Computer Science Student from Heidelberg</div>
+            </div>
+        </div>
+        <div class="hero-foot"></div>
+    </section>
+    <div id="main" class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                <div class="content is-medium">
+                    <p>
+                        My name is Erik Imgrund and I am currently pursuing my M.Sc. Data and Computer Science in Heidelberg.
+                        Additionally, I am conducting research on the applications of machine learning for problems in computer security.
+                    </p>
+
+                    <h3 id="academics">Academical Merits</h3>
+                    <ul>
+                        <li>Currently M.Sc. Data and Computer Science @ Heidelberg University</li>
+                        <li>B.Sc. Computer Science @ Corporate State University Karlsruhe</li>
+                    </ul>
     
+                    <h3 id="publications">Publications</h3>
+                    <div class="card">
+                        <div class="title">
+                            Broken Promises: Measuring Confounding Effects in Learning-based Vulnerability Discovery
+                        </div>
+                        <div class="other">
+                            Erik Imgrund, Tom Ganz, Martin Härterich, Niklas Risse, Lukas Pirch, Konrad Rieck
+                        </div>
+                        <div class="other is-italic">
+                            ACM Workshop on Artificial Intelligence and Security (AISec), 2023. (to appear)
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-031-37586-6_17">CodeGraphSMOTE - Data Augmentation for Vulnerability Discovery</a>
+                        </div>
+                        <div class="other">
+                            Tom Ganz, Erik Imgrund, Martin Härterich, Konrad Rieck
+                        </div>
+                        <div class="other is-italic">
+                            Data and Applications Security and Privacy XXXVII (DBSec), 2023.
+                        </div>
+                        <div class="other">
+                            <a href="https://mlsec.org/docs/2023-dbsec.pdf" class="button is-small">
+                                PDF
+                            </a>
+                            <a href="https://github.com/SAP-samples/security-research-codegraphsmote" class="button is-small">
+                                Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3 id="talks">Talks</h3>
+                    <ul>
+                        <li>SAP Conference on Machine Learning 2023: Data Augmentation for Attributed Graph Classification</li>
+                    </ul>
+                    
+                    <!--<h3 id="work-experience">Employment</h3>
+                    <div class="card">
+                        <div class="title">
+                            SAP SE
+                        </div>
+                        <div class="other is-italic">
+                            Masters Student
+                        </div>
+                        <div class="other is-italic">
+                            October 2022 - (current)
+                        </div>
+                        <div class="other">
+                            <ul>
+                                <li>Worked on multiple papers in the field of intelligent code analysis as part of the publicly funded project <a href="https://www.ivan-project.org/">IVAN</a></li>
+                                <li>Compared different model architectures for vulnerability detection and localization in diverse scenarios to calculate artifact-controlled accuracy</li>
+                                <li>Helped develop solutions and ideas for better graph representations for flaw detection</li>
+                                <li>Analyzed the utility of machine learning for vulnerability detection and localization</li>
+                                <li>Technologies: Python, PyTorch, Graph Neural Networks, Transformers, Code Property Graphs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">
+                            SAP SE
+                        </div>
+                        <div class="other is-italic">
+                            Vocational Training (Bachelors Student)
+                        </div>
+                        <div class="other is-italic">
+                            September 2019 - September 2022
+                        </div>
+                        <div class="other">
+                            <ul>
+                                <li>Analyzed current and developed new data augmentation methods for graph data augmentation resulting in a peer-reviewed paper</li>
+                                <li>Developed a new method for anomaly detection in graph data utilizing small unlabeled datasets with PyTorch and PyTorch Geometric</li>
+                                <li>Automated the building, testing and bug localization for multiple projects using explanations from neural networks</li>
+                                <li>Analyzed internal documentation requirements and consequently developed a cloud-native solution utilizing TypeScript, PostgreSQL, React and TravisCI</li>
+                                <li>Improved performance and usability of data import functionality for the product "Product Lifecycle Management" using ABAP and SQL</li>
+                                <li>Analyzed and resolved numerous customer issues by supplying support and correcting errors in ABAP code</li>
+                                <li>Planned and completed multiple seminars for other vocational students</li>
+                                <li>Developed an email-based notification system for a non-profit organization</li>
+                                <li>Received training on SAP Netweaver, ABAP, ABAP Object, JavaScript, HTML, CSS, SAP HANA, SAPUI5, User Experience, Project Management, Presentation Techniques</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">
+                            Litronik Entwicklungs GmbH
+                        </div>
+                        <div class="other is-italic">
+                            Summer Internship
+                        </div>
+                        <div class="other is-italic">
+                            Summer 2017
+                        </div>
+                        <div class="other">
+                            <ul>
+                                <li>Automated one step of the production of medical grade capacitors</li>
+                                <li>Developed hard- and software for scalable collection of measurements</li>
+                                <li>Technologies: C, Delphi, EtherCAT, ARM Microcontroller</li>
+                            </ul>
+                        </div>
+                    </div>-->
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
