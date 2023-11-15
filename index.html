@@ -6,6 +6,10 @@
     <title>Erik Imgrund</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
         .hero {
             background-color: #7facb3;
             background-image: url("bg.jpg");
@@ -53,6 +57,34 @@
         .content h3 {
             color: #00b8d4;
         }
+
+        @keyframes attention {
+            30% { transform: scale(1.2) rotate(45deg); }
+            40%, 60% { transform: rotate(25deg) scale(1.2); }
+            50% { transform: rotate(65deg) scale(1.2); }
+            70% { transform: rotate(45deg) scale(1.2); }
+            100% { transform: scale(1) rotate(45deg); }
+        }
+
+        @-webkit-keyframes attention {
+            30% { -webkit-transform: scale(1.2) rotate(45deg); }
+            40%, 60% { -webkit-transform: rotate(25deg) scale(1.2); }
+            50% { -webkit-transform: rotate(65deg) scale(1.2); }
+            70% { -webkit-transform: rotate(45deg) scale(1.2); }
+            100% { -webkit-transform: scale(1) rotate(45deg); }
+        }
+
+        #down-arrow {
+            border: solid #123456;
+            border-width: 0 3.5px 3.5px 0;
+            display: inline-block;
+            padding: 15px;
+            margin: 15px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            animation: attention 1s ease-out 2s 1;
+            -webkit-animation: attention 1s ease-out 1.5s 1;
+        }
     </style>
 </head>
 <body>
@@ -70,6 +102,9 @@
             </div>
         </div>
         <div class="hero-foot">
+            <div class="container has-text-centered">
+                <a href="#main" id="down-arrow"></a>
+            </div>
         </div>
     </section>
     <div id="main" class="section">
