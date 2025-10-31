@@ -40,6 +40,11 @@
             margin-bottom: 0;
             color: #002d62;
         }
+        .card > .award {
+            font-size: 0.9em;
+            margin-bottom: 0;
+            color: #058;
+        }
         a {
             color: #058;
         }
@@ -93,6 +98,7 @@
 
         .button.is-small:not(.is-rounded) {
             border-radius: 4px;
+            margin-top: 2px;
         }
 
         .is-zero-size {
@@ -159,13 +165,41 @@
                     <h3 id="publications">Publications</h3>
                     <div class="card">
                         <div class="title">
+                            <a href="https://arxiv.org/abs/2509.19117">LLM-based Vulnerability Discovery through the Lens of Code Metrics</a>
+                        </div>
+                        <div class="other">
+                             Felix Weissberg, Lukas Pirch, Erik Imgrund, Jonas Möller, Thorsten Eisenhofer and Konrad Rieck
+                        </div>
+                        <div class="other is-italic">
+                            IEEE/ACM International Conference on Software Engineering (ICSE) (to appear) 
+                        </div>
+                        <div class="other">
+                            <a href="https://arxiv.org/pdf/2509.19117" class="button is-small">
+                                PDF
+                            </a>
+                            <a href="https://github.com/mlsec-group/cheetah" class="button is-small">
+                                Code
+                            </a>
+                            <a onclick="copyToClipboard(this, `@article{weissberg2025llm,
+  title={LLM-based Vulnerability Discovery through the Lens of Code Metrics},
+  author={Weissberg, Felix and Pirch, Lukas and Imgrund, Erik and M{\&quot;o}ller, Jonas and Eisenhofer, Thorsten and Rieck, Konrad},
+  journal={arXiv preprint arXiv:2509.19117},
+  year={2025}
+}`)" class="button is-small">Cite</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">
                             <a href="https://arxiv.org/abs/2504.15942">Adversarial Observations in Weather Forecasting</a>
                         </div>
                         <div class="other">
                             Erik Imgrund, Thorsten Eisenhofer, and Konrad Rieck
                         </div>
                         <div class="other is-italic">
-                            Computing Research Repository (CoRR), 2025
+                            ACM Conference on Computer and Communications Security (CCS) (to appear)
+                        </div>
+                        <div class="award">
+                            Distinguished Paper Award
                         </div>
                         <div class="other">
                             <a href="https://arxiv.org/pdf/2504.15942" class="button is-small">
@@ -190,7 +224,7 @@
                             <a href="https://dl.acm.org/doi/10.1145/3634737.3661141">SoK: Where to Fuzz? Assessing Target Selection Methods in Directed Fuzzing</a>
                         </div>
                         <div class="other">
-                            Felix Weißberg, Jonas Möller, Tom Ganz, Erik Imgrund, Lukas Pirch, Lukas Seidel, Moritz Schloegel, Thorsten Eisenhofer, Konrad Rieck
+                            Felix Weissberg, Jonas Möller, Tom Ganz, Erik Imgrund, Lukas Pirch, Lukas Seidel, Moritz Schloegel, Thorsten Eisenhofer, Konrad Rieck
                         </div>
                         <div class="other is-italic">
                             ACM Asia Conference on Computer and Communications Security (ASIACCS), 2024
